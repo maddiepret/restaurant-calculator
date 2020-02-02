@@ -1,0 +1,53 @@
+<!DOCTYPE = html>
+<html lang="en">
+
+<head>
+    <title>Cafe bill calculator</title>
+    <script type="text/javascript" src="restaurant.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container1">
+        <div>
+            <h2>Select your order!</h2><br><br>
+        </div>
+        <div class="flexBoxContainer1">
+            <!-- Drinks option-->
+            <h3>Drinks</h3>
+            <p>Would you like something to drink?</p>
+            <div>
+                <button onclick="drinkFunction()" class="btn btn-primary">Yes, please</button>
+                <button onclick="noThanks()" class="btn btn-danger">No thanks!</button>
+            </div><br>
+            <div id="selectedDrink"> </div>
+        </div><br>
+        <!--Food options -->
+        <div class="flexBoxContainer1">
+            <h3>Food</h3>
+            <p>Would you like something to eat?</p>
+            <div>
+                <button onclick="foodFunction()" class="btn btn-primary">Yes, please</button>
+                <button onclick="noThanksFood()" class="btn btn-danger">No thanks!</button>
+            </div><br>
+            <div id="selectedFood"></div>
+        </div><br><br>
+        <!--Tip -->
+        <div class="flexBoxContainer1">
+            <h3>Tip</h3>
+            <button class="btn btn-success" id="getTip" onclick="calculateTip()">Add Tip</button>
+            <button onclick="noTip()" class="btn btn-danger">No Tip</button>
+            <div id="selectTip"></div>
+            <br><br>
+        </div>
+        <!--Total -->
+        <div class="flexBoxContainer1">
+            <h3>Total</h3>
+            <button class="btn btn-success" id="getTotal" onclick="total()">Calculate total</button><br><br>
+            <div id="totalPrice"></div>
+            <br><br>
+        </div>
+    </div>
+</body>
+
+</html>
